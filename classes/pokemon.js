@@ -1,13 +1,13 @@
 class Pokemon {
-    constructor(name, maxHealth, active, activeHealth, type, weakness, resistance, ...attacks){
+    constructor(name, maxHealth, type, weakness, resistance, ...attacks){
         this.name = name;
         this.maxHealth = maxHealth;
-        this.active;
-        this.activeHealth = activeHealth;
         this.type = type;
         this.weakness = weakness;
         this.resistance = resistance;
         this.attacks = attacks;
+        this.activeHealth = this.maxHealth;
+        this.active = true;
     }
 
     Hit(hitpoint){
